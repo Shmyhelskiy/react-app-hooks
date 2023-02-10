@@ -1,5 +1,7 @@
 import "./App.css";
-import Contracts from "./components/ContractsList.js";
+import Contracts from "./components/contacts/ContractsList";
+import Nav from "./components/nav/Nav";
+import Footer from "./components/footer/Footer";
 
 const contacts = [
   {
@@ -39,10 +41,11 @@ const contacts = [
   },
 ];
 function App() {
-
   return (
     <div className="App">
-      <Contracts state={contacts} />
+      <Nav className="Nav" />
+      <Contracts className="main-content" contacts={contacts} />
+      <Footer className="Footer" />
     </div>
   );
 }

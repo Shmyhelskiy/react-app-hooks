@@ -1,0 +1,26 @@
+.wrapper {
+  border-bottom: 1px solid orange;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.contact-gender {
+  height: 50px;
+  margin: 10px 15px;
+}
+.LastName {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.contact-content {
+  display: flex;
+  align-items: center;
+}
+.contact-phone {
+  margin: 10px 10px;
+}
+
+.content {
+  min-width: 150px;
+}

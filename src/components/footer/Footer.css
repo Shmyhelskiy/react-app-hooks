@@ -1,0 +1,24 @@
+.footer {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.footer a {
+  font-weight: bold;
+}
+.footer a:hover {
+  color: rgb(41, 235, 41);
+}
+.footer-link {
+  display: flex;
+  align-items: center;
+}
+.footer-img {
+  height: 25px;
+  margin: 10px;
+}
