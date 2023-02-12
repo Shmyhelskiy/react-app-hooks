@@ -10,7 +10,6 @@ const Сontracts = ({ contacts }) => {
     [checkedOne, setCheckedOne] = useState(true),
     [checkedTwo, setCheckedTwo] = useState(true),
     [checkedThree, setCheckedThree] = useState(true),
-    
     checkBoxOneChange = () => {
       setCheckedOne(!checkedOne);
     },
@@ -65,17 +64,17 @@ const Сontracts = ({ contacts }) => {
               .toLocaleLowerCase()
               .includes(serch.toLocaleLowerCase()) ||
             item.phone.includes(serch.toLocaleLowerCase())
-          ) {
+          )
             return true;
-          }
         })
         .filter((item) => {
           if (
             (item.gender === "male" && checkedOne) ||
-            (item.gender === "female" && checkedTwo)
+            (item.gender === "female" && checkedTwo) ||
+            (!item.gender && checkedThree)
           ) {
             return true;
-          } else if (!item.gender && checkedThree) return true;
+          }
         })
         .map((item) => (
           <Contact key={item.id} {...item} />
